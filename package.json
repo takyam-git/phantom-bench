@@ -40,6 +40,6 @@
     "url": "http://www.opensource.org/licenses/MIT"
   },
   "scripts": {
-    "test": "cake test"
+    "test": "grunt"
   }
 }
