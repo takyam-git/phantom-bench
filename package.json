@@ -29,7 +29,11 @@
     "grunt-mocha-test": "~0.8.0",
     "chai": "~1.8.1",
     "sinon": "~1.7.3",
-    "sinon-chai": "~2.4.0"
+    "sinon-chai": "~2.4.0",
+    "request": "~2.27.0",
+    "validator": "~2.0.0",
+    "underscore": "~1.5.2",
+    "grunt-contrib-watch": "~0.5.3"
   },
   "licenses": {
     "type": "MIT",

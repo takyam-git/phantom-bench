@@ -1,7 +1,4 @@
 module.exports = function (grunt) {
-
-  grunt.loadNpmTasks('grunt-mocha-test');
-
   grunt.initConfig({
     // Configure a mochaTest task
     mochaTest: {
@@ -12,9 +9,19 @@ module.exports = function (grunt) {
         },
         src: ['test/**/*.spec.coffee']
       }
+    },
+
+    watch: {
+      files: ['src/**/*.coffee', 'test/**/*.coffee'],
+      tasks: ['test']
     }
   });
 
-  grunt.registerTask('default', 'mochaTest');
+  //load modules
+  grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
+  //task registers
+  grunt.registerTask('test', 'mochaTest');
+  grunt.registerTask('default', 'mochaTest');
 };
